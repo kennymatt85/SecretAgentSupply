@@ -163,5 +163,24 @@ footer {
 
 p {
   text-align: left;
+}
 
+/*Design Max 920px*/
+@media only screen and (min-width: 1024px) {
+  .nodisplay920 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nodisplay {
+    display: none;
+  }
+  .item {
+    width: 47%;
+  }
+
+  nav a {
+    margin: 0.75rem auto;
+  }
 }
