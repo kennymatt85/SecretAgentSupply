@@ -167,20 +167,78 @@ p {
 
 /*Design Max 920px*/
 @media only screen and (min-width: 1024px) {
-  .nodisplay920 {
+  /*Switch to full menu*/
+  .nodisplay.dt {
     display: none;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .nodisplay {
+  /*Remove All nodisplay items*/
+  .nodisplay.tab {
     display: none;
   }
+  /*Change Products to 47%*/
   .item {
     width: 47%;
   }
 
+  /*Centralise Menu Item*/
   nav a {
     margin: 0.75rem auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+/*Remove All nodisplay items*/
+  .nodisplay.phone {
+    display: none;
+  }
+/*Change Banner Size*/
+  .main.banner {
+    height: 15rem;
+  }
+/*Change position of new arrivals box span page change padding*/
+  .arrivals {
+    position: relative;
+    top: 10rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+/*Change New Arrivals Fonts*/
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.77rem;
+  }
+
+  /*Change Product/Location/Hours to 90%*/
+
+  .item, .box {
+    width: 90%;
+    margin: auto;
+  }
+
+  /*Location/Hours Boxes collapsing change direction*/
+
+  .locationhours{
+    flex-direction: column;
+  }
+
+  /*Add Space between location and Hours*/
+
+  .box.margin {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+/*Copyright centralised*/
+
+  footer p {
+    margin: 0 auto;
   }
 }
